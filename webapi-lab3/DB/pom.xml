@@ -1,40 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>DropBox</groupId>
-  <artifactId>DropBox</artifactId>
+  <groupId>webapi-hw</groupId>
+  <artifactId>webapi-hw</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependencies>
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.0.0-alpha-7</version>
-</dependency>
-<dependency>
-    <groupId>com.dropbox.core</groupId>
-    <artifactId>dropbox-core-sdk</artifactId>
-    <version>3.1.5</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-<dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-api</artifactId>
-    <version>5.7.0</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-<dependency>
-    <groupId>io.rest-assured</groupId>
-    <artifactId>rest-assured</artifactId>
-    <version>4.3.3</version>
-</dependency>
-
-</dependencies>
-<properties>
-  <maven.compiler.source> 1.6 </maven.compiler.source>
-  <maven.compiler.target> 1.6 </maven.compiler.target>
-</properties>
-  <build>
+  <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -43,5 +16,23 @@
             </plugin>
         </plugins>
     </build>
-  
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.7.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>
